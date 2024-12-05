@@ -48,14 +48,14 @@
     </tr>
 
     <td><a href="#Abstract">Abstract</td>
-    <tr>
-      <td><a href="#Introduction">Introduction</td>
-    </tr>
-      <tr>
-         <td><a href="#LiDAR Technology">LiDAR Technology</td>
-      </tr>
+    <tr><td><a href="#Introduction">Introduction</td></tr>
+      <tr><td><a href="#LiDAR Technology">LiDAR Technology</td></tr>
      <tr> <td><a href="#SLAM and VSLAM">SLAM and VSLAM</td></tr>
-      
+      <tr> <td><a href="#Importance of 3D Visualisation">Importance of 3D Visualisation</td></tr>
+      <tr><td><a href="#Software Applications">Software Applications</td></tr>
+      <tr><td><a href="#Movement Tracking">Movement Tracking</td></tr>
+      <tr><td><a href="#Conclusion">Conclusion</td></tr>
+      <tr><td><a href="#References">References</td></tr>
   </table>
 <body>
 <h3 id="Abstract">Abstract</h3>
@@ -88,7 +88,9 @@
       which is difficult for an operator to read and act on. This shows that LiDAR is better suited for autonomous machines due to it retrieving data which is 
       difficult for a human operator to understand.
     </pre>
+</p>
 <h3 id="SLAM and VSLAM">SLAM and VSLAM</h3>
+  <p class="ex1">
   <pre>
     SLAM “involves a system that simultaneously completes the positioning of the mobile robot itself and the map construction of the surrounding environment without 
     any prior environmental information” (Yang, S: SGC-VSLAM). This means that any sensor can be used such as LiDAR to interpret the environment and obstacles around 
@@ -99,10 +101,57 @@
     solved through algorithms to undo this distortion shown in figure 2 below (Visual SLAM: The Basics, 2020) this is done using a distortion grid which makes the 
     image clearer and easier to produce key points and other estimations such as depth estimation. 
   </pre>
+</p>
   <img src="KeyPoint.png" alt="Figure 1" width"800" height="500">
   <h4>Figure 1</h4>
   <img src="Distortion.png" alt="Figure 2" width "800" Height = "500">
   <h4>Figure 2</h4>
+  <h3 id="Importance of 3D Visualisation">Importance of 3D Visualisation</h3>
+<p class="ex1">
+  <pre>
+    3d visualization is key to allowing for robots to act autonomously due to it allowing for the robot to process its environment around it without the aid of an 
+    operator. Diversity in how an environment is read allows for more accurate readings of an environment and will remove any error which could be caused by faulty 
+    sensors or inaccuracies in its programming. An example of where 3d visualisation is important is the ROBONAUT 2(NASA , 2022).  This shows that software like 
+    this is key when a human is unable to see in an environment. Visualisation software is key to the navigation of unknown environments where humans cannot 
+    travel and in which there needs to be an autonomous response. 
+  </pre>
+</p>
+  <h3 id="Software Applications">Software Applications</h3>
+<p class="ex1">
+  <pre>
+    Sensors are a single part of the process of 3d Visualisation. The most important part is the algorithms and processes such as YOLO-8 (Ultranlytics YOLOv8, 2024) 
+    which is a software that allows for computer vision and can be specified to unique purposes based on what the robot requires for instance a Rubik’s cube solver 
+    would require an orientation-based installation of YOLO to determine the position of people. This links with the discussed visualisation methods as it can 
+    process the information that VSLAM receives from the environment. Other software such as occlusion algorithms shown in a paper by Yuzuka Isobe (2018) Which 
+    details how occlusion is used to negate occlusion due to light changes this allows for objects to be seen when in darkness the paper also discusses that 
+    Machine Learning is used for occlusion algorithms using predefined data sets which can be analysed to teach the program what should exist in the occluded area.
+  </pre>
+</p>
+  <h3 id="Movement Tracking">Movement Tracking</h3>
+  <p class = "ex1">
+    <pre>
+      A key part of a robot is dealing with position tracking this can be done through multiple means such as an odometer which tracks the number of wheel 
+      rotations to estimate a distance travelled from the origin which will allow for the robot to be tracked. This however is not accurate and may mean that the 
+      robots perceived location in its virtual environment is different than its physical location. This can be solved by using multiple methods of tracking the
+      robot’s movement another method of this is by calculating the average speed of the robot which will determine its net movement from its starting position.
+    </pre>
+</p>
+  <h3 id="Conclusion">Conclusion</h3>
+  <p class="ex1">
+    <pre>
+      Robot visualization requires all these different software’s and sensors to provide an accurate analysis of the robot’s environment. This is because 
+      positioning the robot correctly is essential to it functioning. This is aided through multiple inputs from both cameras where SLAM technology can be used 
+      and LiDAR to give a 3d view of obstacles.  Software such as YOLO is also key in simplifying the processes by which the code understands its environment 
+      while using occlusion to predict the position of obstacles before it can be written.
+    </pre>
+  </p>
+
+  <h3 id="References">References</h3>
+  <p class= "ex1">
+    <pre>
+      
+    </pre>
+</p>
 <div id="last-updated">Loading last update time...</div>
 <!-- Verify Button -->
 <button onclick="verifyLastUpdatedTime()" style="display: block; margin: 10px auto; padding: 8px 16px;">
