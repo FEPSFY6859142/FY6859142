@@ -56,24 +56,43 @@
 <h3 id="Abstract">Abstract</h3>
 <p class="ex1"> 
   <pre>
- Visualisation within robots is used to properly map out an environment they are positioned within, this can be performed by multiple methods such as Visual Simultaneous Location and Mapping (VSLAM) (Visual SLAM: The Basics ,2020) and the use of Light Detection and ranging (LiDAR) technology (McManamon P, 2019). These technologies have a variety of advantages and disadvantages to each and allow for further development through software’s which can advance these technologies such as occlusion algorithms (Isobe Y, 2018) and computer vision algorithms e.g. YOLOv8 (Ultranlytics YOLOv8 , 2024) These technologies are also synergetic and can work in unison to provide a highly accurate visualisation for the robot when it is placed in a dynamic environment. 
+    Visualisation within robots is used to properly map out an environment they are positioned within, this can be performed by multiple methods such as Visual 
+    Simultaneous Location and Mapping (VSLAM) (Visual SLAM: The Basics ,2020) and the use of Light Detection and ranging (LiDAR) technology (McManamon P, 2019). 
+    These technologies have a variety of advantages and disadvantages to each and allow for further development through software’s which can advance these 
+    technologies such as occlusion algorithms (Isobe Y, 2018) and computer vision algorithms e.g. YOLOv8 (Ultranlytics YOLOv8 , 2024) These technologies are also 
+    synergetic and can work in unison to provide a highly accurate visualisation for the robot when it is placed in a dynamic environment. 
   </pre>
 </p>
  <hr>
 <h3 id="Introduction">Introduction</h3>
   <p class="ex1">
     <pre>
-     Visualisation is a key part of a robot’s ability to be self-autonomous which allows for independent movement and analysis of an environment. This is done through many aspects in robotics including producing a virtual environment for the robot to move in such as ones created in VSLAM while using measurement techniques such as LIDAR which uses electromagnetic waves to provide accurate distances between the robot and objects in a 3D environment. These measurements can allow for the robot to move more accurately in an environment and reduce the risk of damage to the robot from collisions. 
+      Visualisation is a key part of a robot’s ability to be self-autonomous which allows for independent movement and analysis of an environment. This is done 
+      through many aspects in robotics including producing a virtual environment for the robot to move in such as ones created in VSLAM while using measurement 
+      techniques such as LIDAR which uses electromagnetic waves to provide accurate distances between the robot and objects in a 3D environment. These 
+      measurements can allow for the robot to move more accurately in an environment and reduce the risk of damage to the robot from collisions. 
     </pre>
   <h3 id="LiDAR Technology">Lidar Technology</h3>
   <p class="ex1">
     <pre>
-      LiDAR Technology
-LiDAR is a technique used for tracking the distance between the sensor and an object in front of it by using the reflection of electromagnetic waves to pinpoint displacement from the object (McManamon P, 2019). This array allows for visual confirmation of obstacles and depth as an obstacle and the wall behind it would bounce back to the sensor at different speeds. This is like method used to estimate sea depth. With the equation: Distance =  (Time*Speed of light)/2   This allows for an accurate depth of objects which the robot can visualise. This technique does not require a camera to extract information from images so is more efficient than other visualization methods due to less data needing to be processed. However, this technique gives a visualization of the environment which is difficult for an operator to read and act on. This shows that LiDAR is better suited for autonomous machines due to it retrieving data which is difficult for a human operator to understand.
+      LiDAR is a technique used for tracking the distance between the sensor and an object in front of it by using the reflection of electromagnetic waves to pinpoint 
+      displacement from the object (McManamon P, 2019). This array allows for visual confirmation of obstacles and depth as an obstacle and the wall behind it 
+      would bounce back to the sensor at different speeds. This is like method used to estimate sea depth. With the equation: Distance =  (Time*Speed of light)/2 
+      This allows for an accurate depth of objects which the robot can visualise. This technique does not require a camera to extract information from images so 
+      is more efficient than other visualization methods due to less data needing to be processed. However, this technique gives a visualization of the environment 
+      which is difficult for an operator to read and act on. This shows that LiDAR is better suited for autonomous machines due to it retrieving data which is 
+      difficult for a human operator to understand.
     </pre>
 <h3 id="SLAM and VSLAM">SLAM and VSLAM</h3>
   <pre>
-    SLAM “involves a system that simultaneously completes the positioning of the mobile robot itself and the map construction of the surrounding environment without any prior environmental information” (Yang, S: SGC-VSLAM). This means that any sensor can be used such as LiDAR to interpret the environment and obstacles around the robot. However, Visual SLAM differs from this due to the primary sensor for the robot being a camera. This is done through analysis of images and highlighting key points within the image this can be seen in figure 1 below (Cai D et al, 2024) which shows the data which is extracted from photos when edge detection and point detection are used alongside comparing two images to show motion detection. This demonstrates how a large scope of data can be retrieved using VSLAM and its related software. However, there are some issues with this considering distortion from the camera lens which would impact the processing of key points. This is solved through algorithms to undo this distortion shown in figure 2 below (Visual SLAM: The Basics, 2020) this is done using a distortion grid which makes the image clearer and easier to produce key points and other estimations such as depth estimation. 
+    SLAM “involves a system that simultaneously completes the positioning of the mobile robot itself and the map construction of the surrounding environment without 
+    any prior environmental information” (Yang, S: SGC-VSLAM). This means that any sensor can be used such as LiDAR to interpret the environment and obstacles around 
+    the robot. However, Visual SLAM differs from this due to the primary sensor for the robot being a camera. This is done through analysis of images and highlighting 
+    key points within the image this can be seen in figure 1 below (Cai D et al, 2024) which shows the data which is extracted from photos when edge detection and 
+    point detection are used alongside comparing two images to show motion detection. This demonstrates how a large scope of data can be retrieved using VSLAM and its 
+    related software. However, there are some issues with this considering distortion from the camera lens which would impact the processing of key points. This is 
+    solved through algorithms to undo this distortion shown in figure 2 below (Visual SLAM: The Basics, 2020) this is done using a distortion grid which makes the 
+    image clearer and easier to produce key points and other estimations such as depth estimation. 
   </pre>
   
 <div id="last-updated">Loading last update time...</div>
