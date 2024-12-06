@@ -72,7 +72,7 @@
  <hr>
 <h3 id="Introduction">Introduction</h3>
   <p class="ex1">
-    <pre>
+    <pre id="Introduction_Text">
       Visualisation is a key part of a robot’s ability to be self-autonomous which allows for independent movement and analysis of an environment. This is done 
       through many aspects in robotics including producing a virtual environment for the robot to move in such as ones created in VSLAM while using measurement 
       techniques such as LIDAR which uses electromagnetic waves to provide accurate distances between the robot and objects in a 3D environment. These 
@@ -80,7 +80,7 @@
     </pre>
   <h3 id="LiDAR">LiDAR Technology</h3>
   <p class="ex1">
-    <pre>
+    <pre id="LiDAR_Text">
       LiDAR is a technique used for tracking the distance between the sensor and an object in front of it by using the reflection of electromagnetic waves to pinpoint 
       displacement from the object (McManamon P, 2019). This array allows for visual confirmation of obstacles and depth as an obstacle and the wall behind it 
       would bounce back to the sensor at different speeds. This is like the method used to estimate sea depth. With the equation: Distance = <Mfrac>(Time*Speed of light)/2</Mfrac> 
@@ -92,7 +92,7 @@
 </p>
 <h3 id="SLAM">SLAM and VSLAM</h3>
   <p class="ex1">
-  <pre>
+  <pre id="SLAM_Text">
     SLAM “involves a system that simultaneously completes the positioning of the mobile robot itself and the map construction of the surrounding environment without 
     any prior environmental information” (Yang, S: SGC-VSLAM). This means that any sensor can be used such as LiDAR to interpret the environment and obstacles around 
     the robot. However, Visual SLAM differs from this due to the primary sensor for the robot being a camera. This is done through analysis of images and highlighting 
@@ -109,7 +109,7 @@
   <h4>Figure 2</h4>
   <h3 id="Importance">Importance of 3D Visualisation</h3>
 <p class="ex1">
-  <pre>
+  <pre id= "Importance_Text">
     3d visualization is key to allowing for robots to act autonomously due to it allowing for the robot to process its environment around it without the aid of an 
     operator. Diversity in how an environment is read allows for more accurate readings of an environment and will remove any error which could be caused by faulty 
     sensors or inaccuracies in its programming. An example of where 3d visualisation is important is the ROBONAUT 2(NASA , 2022).  This shows that visualisation software like 
@@ -119,7 +119,7 @@
 </p>
   <h3 id="Software">Software Applications</h3>
 <p class="ex1">
-  <pre>
+  <pre id = "Software_Text">
     Sensors are a single part of the process of 3d Visualisation. The most important part is the algorithms and processes such as YOLO-8 (Ultranlytics YOLOv8, 2024) 
     which is a software that allows for computer vision and can be specified to unique purposes based on what the robot requires for instance a Rubik’s cube solver 
     would require an orientation-based installation of YOLO to determine the position of people. This links with the discussed visualisation methods as it can 
@@ -130,7 +130,7 @@
 </p>
   <h3 id="Movement">Movement Tracking</h3>
   <p class = "ex1">
-    <pre>
+    <pre id="Movement_Text">
       A key part of a robot is dealing with position tracking this can be done through multiple means such as an odometer which tracks the number of wheel 
       rotations to estimate a distance travelled from the origin which will allow for the robot to be tracked. This however is not accurate and may mean that the 
       robots perceived location in its virtual environment is different than its physical location. This can be solved by using multiple methods of tracking the
@@ -140,7 +140,7 @@
 </p>
   <h3 id="Conclusion">Conclusion</h3>
   <p class="ex1">
-    <pre>
+    <pre id="Conclusion_Text">
       Robot visualization requires all these different software’s and sensors to provide an accurate analysis of the robot’s environment. This is because 
       positioning the robot correctly is essential to it functioning. This is aided through multiple inputs from both cameras where SLAM technology can be used 
       and LiDAR to give a 3d view of obstacles.  Software such as YOLO is also key in simplifying the processes by which the code understands its environment 
@@ -232,13 +232,13 @@
   // Function to calculate and display total word count from selected sections
   function displayTotalWordCount() {
     // Calculate word count for each section and accumulate the total
-    const IntroductionCount = displayWordCount("Introduction");
-    const LiDARCount = displayWordCount("LiDAR");
-    const SLAMCount = displayWordCount("SLAM");
-    const ImportanceCount = displayWordCount("Importance");
-    const SoftwareCount = displayWordCount("Software");
-    const MovementCount = displayWordCount("Movement");
-    const ConclusionCount = displayWordCount("Conclusion");
+    const IntroductionCount = displayWordCount("Introduction_Text");
+    const LiDARCount = displayWordCount("LiDAR_Text");
+    const SLAMCount = displayWordCount("SLAM_Text");
+    const ImportanceCount = displayWordCount("Importance_Text");
+    const SoftwareCount = displayWordCount("Software_Text");
+    const MovementCount = displayWordCount("Movement_Text");
+    const ConclusionCount = displayWordCount("Conclusion_Text");
     // Calculate the sum of all selected sections
     const totalWordCount = IntroductionCount + LiDARCount + SLAMCount + ImportanceCount + SoftwareCount + MovementCount + ConclusionCount;
     // Display the total word count
